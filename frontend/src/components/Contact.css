@@ -1,0 +1,125 @@
+.contact {
+  padding: 100px 7.5%;
+  background: #FFFFFF;
+  position: relative;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.contact-card {
+  background: #FFFFFF;
+  border: 2px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-card:hover {
+  border-color: #000000;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #F8F9FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 1px solid #E2E8F0;
+}
+
+.contact-card:hover .contact-icon {
+  transform: scale(1.1);
+  background: #000000;
+  border-color: #000000;
+  color: #FFFFFF;
+}
+
+.contact-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
+.contact-value {
+  font-size: 16px;
+  color: #4A5568;
+  margin: 0;
+  word-break: break-word;
+}
+
+.social-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.social-title {
+  font-size: 18px;
+  color: #718096;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.social-links-grid {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.social-link-card {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: #F8F9FA;
+  border: 2px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4A5568;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link-card:hover {
+  background: #000000;
+  border-color: #000000;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 20px;
+  }
+  
+  .contact-methods {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .contact-card {
+    padding: 32px;
+  }
+}
